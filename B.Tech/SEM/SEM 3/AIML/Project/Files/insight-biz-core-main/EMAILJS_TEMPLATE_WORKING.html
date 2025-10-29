@@ -1,0 +1,58 @@
+<!--
+  WORKING EMAILJS TEMPLATE - USE THIS!
+  This avoids the "corrupted variables" error by using individual variables
+  instead of the full HTML content.
+-->
+
+<div style="font-family: system-ui, sans-serif, Arial; font-size: 14px; color: #333; padding: 14px 8px; background-color: #f5f5f5;">
+  <div style="max-width: 600px; margin: auto; background-color: #fff">
+    <div style="border-top: 6px solid #458500; padding: 16px">
+      <span style="font-size: 16px; vertical-align: middle; padding-left: 8px;">
+        <strong>Thank You for Your Order</strong>
+      </span>
+    </div>
+    <div style="padding: 0 16px">
+      <p>We'll send you tracking information when the order ships.</p>
+      <div style="text-align: left; font-size: 14px; padding-bottom: 4px; border-bottom: 2px solid #333;">
+        <strong>Order # {{order_id}}</strong>
+      </div>
+      
+      <!-- Items List - Use {{items}} for plain text or {{orders_html}} for HTML -->
+      <div style="padding: 24px 0; font-size: 14px;">
+        <pre style="white-space: pre-wrap; font-family: inherit; margin: 0;">{{items}}</pre>
+      </div>
+      
+      <div style="padding: 24px 0">
+        <div style="border-top: 2px solid #333"></div>
+      </div>
+      <table style="border-collapse: collapse; width: 100%; text-align: right">
+        <tr>
+          <td style="width: 60%"></td>
+          <td>Shipping</td>
+          <td style="padding: 8px; white-space: nowrap">₹{{shipping}}</td>
+        </tr>
+        <tr>
+          <td style="width: 60%"></td>
+          <td>Taxes</td>
+          <td style="padding: 8px; white-space: nowrap">₹{{tax}}</td>
+        </tr>
+        <tr>
+          <td style="width: 60%"></td>
+          <td style="border-top: 2px solid #333">
+            <strong style="white-space: nowrap">Order Total</strong>
+          </td>
+          <td style="padding: 16px 8px; border-top: 2px solid #333; white-space: nowrap">
+            <strong>₹{{total}}</strong>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div style="max-width: 600px; margin: auto">
+    <p style="color: #999">
+      The email was sent to {{email}}<br />
+      You received this email because you placed the order
+    </p>
+  </div>
+</div>
+
